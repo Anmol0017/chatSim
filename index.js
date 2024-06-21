@@ -22,7 +22,7 @@ main()
   .catch((err) => console.log(err));
 
 async function main() {
-  await mongoose.connect("mongodb://127.0.0.1:27017/whatsapp");
+  await mongoose.connect("mongodb+srv://anmol979821:RT41WO7PwNiC8cty@cluster0.tjp4bwg.mongodb.net/whatsapp");
 }
 
 // ------------------------------------------------
