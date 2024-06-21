@@ -22,7 +22,9 @@ main()
   .catch((err) => console.log(err));
 
 async function main() {
-  await mongoose.connect("mongodb+srv://anmol979821:RT41WO7PwNiC8cty@cluster0.tjp4bwg.mongodb.net/whatsapp");
+  await mongoose.connect(
+    "mongodb+srv://anmol979821:RT41WO7PwNiC8cty@cluster0.tjp4bwg.mongodb.net/whatsapp?retryWrites=true&w=majority&tls=true"
+  );
 }
 
 // ------------------------------------------------
