@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Write</title>
+    <style>
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+        background-color: #f0f0f0;
+      }
+
+      .container {
+        text-align: center;
+        background: #fff;
+        padding: 20px 30px;
+        border-radius: 15px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      }
+
+      h3 {
+        margin-bottom: 20px;
+        color: #8707ff;
+      }
+
+      .inp-box {
+        color: rgb(0, 0, 0);
+        border: 2px solid #8707ff;
+        border-radius: 10px;
+        padding: 10px 25px;
+        max-width: 190px;
+        width: 100%;
+        box-sizing: border-box;
+        margin-bottom: 15px;
+      }
+
+      .inp-box:active,
+      .inp-box:focus {
+        
+        outline: none;
+      }
+
+      .btn {
+        background: linear-gradient(140.14deg, #ec540e 15.05%, #d6361f 114.99%) padding-box,
+        linear-gradient(142.51deg, #ff9465 8.65%, #af1905 88.82%) border-box;
+        border-radius: 7px;
+        border: 2px solid transparent;
+        text-shadow: 1px 1px 1px #00000040;
+        box-shadow: 8px 8px 20px 0px #45090059;
+        padding: 10px 40px;
+        line-height: 20px;
+        cursor: pointer;
+        transition: all 0.3s;
+        color: white;
+        font-size: 18px;
+        font-weight: 500;
+        margin-top: 10px;
+      }
+
+      .btn:hover {
+        box-shadow: none;
+        opacity: 80%;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h3>Write</h3>
+      <form method="post" action="/chats">
+        <input
+          class="inp-box"
+          type="text"
+          name="from"
+          placeholder="Who are you?"
+        />
+        <br />
+        <textarea class="inp-box" name="msg" placeholder="Write"></textarea>
+        <br />
+        <input
+          class="inp-box"
+          type="text"
+          placeholder="Add receiver"
+          name="to"
+        />
+        <br />
+        <button class="btn">Create Chat</button>
+      </form>
+    </div>
+  </body>
+</html>

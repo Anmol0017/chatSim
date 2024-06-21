@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Capriola&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+        background-color: #f0f0f0;
+      }
+
+      header,
+      footer {
+        background-color: #007bff;
+        color: white;
+        text-align: center;
+        font-family: "Capriola";
+
+        padding: 10px 0;
+      }
+
+      .content {
+        flex: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .container {
+        text-align: center;
+        padding: 20px;
+        background: white;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+
+      button {
+        padding: 10px 20px;
+        font-size: 16px;
+        cursor: pointer;
+        border: none;
+        border-radius: 5px;
+        background-color: #007bff;
+        color: white;
+      }
+
+      button:hover {
+        background-color: #0056b3;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Chat Operations Demo App</h1>
+    </header>
+
+    <div class="content">
+      <div class="container">
+        <h1>Welcome to Chat Operations Demo</h1>
+        <p>
+          This project demonstrates how chat operations work using Express,
+          MongoDB, and EJS templates.
+        </p>
+        <button onclick="window.location.href='/chats'">Go to Chats</button>
+      </div>
+    </div>
+
+    <footer>
+      <p>&copy; 2024 Chat Operations Demo App. All rights reserved.</p>
+    </footer>
+  </body>
+</html>
